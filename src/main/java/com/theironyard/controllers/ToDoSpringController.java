@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
@@ -24,9 +25,10 @@ public class ToDoSpringController {
     }
 
     @RequestMapping("/add-item")
-    public void addItem(HttpServletResponse response) throws IOException {
+    public void addItem(HttpServletResponse response, String text) throws IOException {
         response.sendRedirect("/");
         ToDoItem item = new ToDoItem();
+        item.text = text;
         toDoItems.save(item);
     }
 }
