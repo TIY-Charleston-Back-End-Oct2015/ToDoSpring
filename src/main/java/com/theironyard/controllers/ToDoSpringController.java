@@ -23,7 +23,7 @@ public class ToDoSpringController {
         return toDoItems.findAll();
     }
 
-    //mergecommfail
+    // this is a route for adding to-do items
     @RequestMapping("/add-item")
     public void addItem(HttpServletResponse response, String text) throws IOException {
         response.sendRedirect("/");
