@@ -24,6 +24,7 @@ public class ToDoSpringController {
         return toDoItems.findAll();
     }
 
+    // EAT ME
     @RequestMapping("/add-item")
     public void addItem(HttpServletResponse response, String text) throws IOException {
         ToDoItem item = new ToDoItem();
