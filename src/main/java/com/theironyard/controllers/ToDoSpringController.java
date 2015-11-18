@@ -23,6 +23,8 @@ public class ToDoSpringController {
         return toDoItems.findAll();
     }
 
+
+    //This is Duke's comment for routing to add-item
     @RequestMapping("/add-item")
     public void addItem(HttpServletResponse response, String text) throws IOException {
         response.sendRedirect("/");
