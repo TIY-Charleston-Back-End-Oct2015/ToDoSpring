@@ -23,8 +23,6 @@ public class ToDoSpringController {
         return toDoItems.findAll();
     }
 
-
-    // trying to create an intentional merge conflict.
     @RequestMapping("/add-item")
     public void addItem(HttpServletResponse response, String text) throws IOException {
         response.sendRedirect("/");
