@@ -20,7 +20,6 @@ public class ToDoSpringController {
 
     @RequestMapping("/items")
     public Iterable<ToDoItem> items() {
-
         return toDoItems.findAll();
     }
 
