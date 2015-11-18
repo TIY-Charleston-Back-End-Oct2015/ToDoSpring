@@ -23,6 +23,7 @@ public class ToDoSpringController {
         return toDoItems.findAll();
     }
 
+    // What What in the butt
     @RequestMapping("/add-item")
     public void addItem(HttpServletResponse response, String text) throws IOException {
         response.sendRedirect("/");
