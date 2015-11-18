@@ -6,4 +6,4 @@ function getItems(itemData) {
     }
 }
 
-$.get("/items", getItems
+$.get("/items", getItems)
