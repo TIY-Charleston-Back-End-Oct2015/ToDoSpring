@@ -23,11 +23,10 @@ public class ToDoSpringController {
         return toDoItems.findAll();
     }
 
-
-    //lawlface
+    // this is a route for adding to-do items
     @RequestMapping("/add-item")
-    public void addItem(HttpServletResponse response, String text) throws IOException {
-        response.sendRedirect("/items");
+    public void addItem(HttpServletResponse response) throws IOException {
+        response.sendRedirect("/");
         ToDoItem item = new ToDoItem();
         item.text = text;
         toDoItems.save(item);
