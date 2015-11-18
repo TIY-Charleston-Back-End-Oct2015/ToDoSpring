@@ -24,9 +24,10 @@ public class ToDoSpringController {
     }
 
     @RequestMapping("/add-item")
-    public void addItem(HttpServletResponse response) throws IOException {
-        response.sendRedirect("/");
+    public void addItem(HttpServletResponse response, String text) throws IOException {
+        response.sendRedirect("/items");
         ToDoItem item = new ToDoItem();
+        item.text = text;
         toDoItems.save(item);
     }
 }

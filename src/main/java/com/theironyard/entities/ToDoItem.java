@@ -12,7 +12,6 @@ public class ToDoItem {
     @GeneratedValue
     @Column(nullable = false)
     int id;
-
     @Column(nullable = false)
     public String text;
 }
