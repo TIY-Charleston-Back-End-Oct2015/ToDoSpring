@@ -20,13 +20,15 @@ public class ToDoSpringController {
 
     @RequestMapping("/items")
     public Iterable<ToDoItem> items() {
+
         return toDoItems.findAll();
     }
 
     @RequestMapping("/add-item")
-    public void addItem(HttpServletResponse response) throws IOException {
+    public void addItem(HttpServletResponse response, String text) throws IOException {
         response.sendRedirect("/");
         ToDoItem item = new ToDoItem();
+        item.text = text;
         toDoItems.save(item);
     }
 }
