@@ -23,6 +23,7 @@ public class ToDoSpringController {
         return toDoItems.findAll();
     }
 
+    // add some random comment
     @RequestMapping("/add-item")
     public void addItem(HttpServletResponse response, String text) throws IOException {
         ToDoItem item = new ToDoItem();
