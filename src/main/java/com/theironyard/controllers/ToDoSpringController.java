@@ -30,5 +30,6 @@ public class ToDoSpringController {
         ToDoItem item = new ToDoItem();
         item.text = text;
         toDoItems.save(item);
+
     }
 }
