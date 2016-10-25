@@ -6,7 +6,7 @@ import javax.persistence.*;
  * Created by zach on 11/17/15.
  */
 @Entity
-@Table(name = "to_do_items")
+@Table(name = "todoItems")
 public class ToDoItem {
     @Id
     @GeneratedValue

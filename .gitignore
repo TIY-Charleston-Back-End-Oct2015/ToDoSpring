@@ -1,3 +1,7 @@
 *.db
 .idea/workspace.xml
+<<<<<<< HEAD
+.Ds_Store
+=======
 .DS_Store
+>>>>>>> 2ae2c8271de6568f9724f1e40ccc8bd1dcb99dd5
