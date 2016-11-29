@@ -23,9 +23,10 @@ public class ToDoSpringController {
         return toDoItems.findAll();
     }
 
-    // this is a route for adding to-do items
+    //makeing merge conflicts
     @RequestMapping("/add-item")
-    public void addItem(HttpServletResponse response, String text) throws IOException {
+    public void addItem(HttpServletResponse response,
+                        String text) throws IOException {
         response.sendRedirect("/");
         ToDoItem item = new ToDoItem();
         item.text = text;
